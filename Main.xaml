@@ -1,0 +1,359 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,364" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Flowchart sap:VirtualizedContainerService.HintSize="633.6,868.8" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="Dt" />
+      <Variable x:TypeArguments="x:String" Name="str" />
+      <Variable x:TypeArguments="s:String[]" Name="myFiles" />
+      <Variable x:TypeArguments="x:String" Name="variable2" />
+    </Flowchart.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75.2</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.7 300,103.6</av:PointCollection>
+        <x:Double x:Key="Height">832.40000000000009</x:Double>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID5</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID5">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,103.6</av:Point>
+          <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,156.4 300,183.6</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[Dt]" Delimitator="Comma" DisplayName="Read CSV" FilePath="Input_Data.csv" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ReadCsvFile>
+      <FlowStep.Next>
+        <FlowStep x:Name="__ReferenceID0">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">200,183.6</av:Point>
+              <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+              <av:PointCollection x:Key="ConnectorLocation">400,210 418.4,210 418.4,274 300,274 300,303.6</av:PointCollection>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:OutputDataTable DataTable="[Dt]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[str]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:OutputDataTable>
+          <FlowStep.Next>
+            <FlowStep x:Name="__ReferenceID1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">200,303.6</av:Point>
+                  <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">300,356.4 300,393.6</av:PointCollection>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Dt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence sap:VirtualizedContainerService.HintSize="810.4,1162.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="768.8,252.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:CopyFile ContinueOnError="{x:Null}" Destination="[&quot;C:\Users\Kornerstone\Documents\UiPath\Sales_Report_Generation_Process\Word_Files&quot;+&quot;\&quot;+CurrentRow(&quot;Name&quot;).ToString+&quot;.docx&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="433.6,160" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="C:\Users\Kornerstone\Documents\UiPath\Sales_Report_Generation_Process\Master_Template.docx" />
+                      </Sequence>
+                      <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[&quot;C:\Users\Kornerstone\Documents\UiPath\Sales_Report_Generation_Process\Word_Files&quot;+&quot;\&quot;+CurrentRow(&quot;Name&quot;).ToString+&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="768.8,776.8" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1">
+                        <p:WordApplicationScope.Body>
+                          <ActivityAction x:TypeArguments="ui:WordDocument">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,667.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="WordReplaceText_1" Replace="[CurrentRow(&quot;Name&quot;).ToString]" ReplaceAll="True" Search="&lt;Name&gt;" />
+                              <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="WordReplaceText_2" Replace="[CurrentRow(&quot;Division&quot;).ToString]" ReplaceAll="True" Search="&lt;Division&gt;" />
+                              <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="433.6,164.8" sap2010:WorkflowViewState.IdRef="WordReplaceText_3" Replace="[CurrentRow(&quot;Sales&quot;).ToString]" ReplaceAll="True" Search="&lt;Sales&gt;" />
+                            </Sequence>
+                          </ActivityAction>
+                        </p:WordApplicationScope.Body>
+                      </p:WordApplicationScope>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+              <FlowStep.Next>
+                <FlowStep x:Name="__ReferenceID2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <av:Point x:Key="ShapeLocation">200,393.6</av:Point>
+                      <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">300,446.4 290,446.4 290,470</av:PointCollection>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" FileName="C:\Users\Kornerstone\Documents\UiPath\Sales_Report_Generation_Process\WordToPDFConverterApp.exe" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="StartProcess_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:StartProcess>
+                  <FlowStep.Next>
+                    <FlowStep x:Name="__ReferenceID3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <av:Point x:Key="ShapeLocation">158.8,470</av:Point>
+                          <av:Size x:Key="ShapeSize">262.4,60</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">290,530 290,583.6</av:PointCollection>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="s:String[]">[myFiles]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("C:\Users\Kornerstone\Documents\UiPath\Sales_Report_Generation_Process\Word_Files")]</InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
+                      <FlowStep.Next>
+                        <FlowStep x:Name="__ReferenceID4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <av:Point x:Key="ShapeLocation">190,583.6</av:Point>
+                              <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[myFiles]">
+                            <ui:ForEach.Body>
+                              <ActivityAction x:TypeArguments="x:String">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="241.6,161.6" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: ExcelCult-WordToPDFConverter" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="1b13fbf9-411f-4629-8178-743b94e7deda" Version="V1">
+                                      <uix:NApplicationCard.Body>
+                                        <ActivityAction x:TypeArguments="x:Object">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                          </ActivityAction.Argument>
+                                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="241.6,609.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NClick ClickType="Single" DisplayName="Click 'Select Word File'" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1b13fbf9-411f-4629-8178-743b94e7deda" Version="V1">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable DesignTimeRectangle="137, 96, 141, 26" ElementType="Button" FriendlyName="'Select Word File'" FullSelectorArgument="&lt;wnd ctrlname='Select_Word_File' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='Select_Word_File' check:text='Select Word File' /&gt;" Guid="1fb50f43-f3e1-43d5-96d0-5e4ca07d7682" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJEAAAAeCAYAAAAsPvwuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAwFSURBVHhe7Zr5U1Tnmsen5oeZqimXuTPjTObeUWLmekMZt9ybOCIakqsxKohJEIlbFKMETLAUFEUjzb4jamhkEVBk39cWmq1ZGpqtG5qGpjcaKlVJfsx/8Jm3SbAEm/F6MUxNTf/w+YH3POe8z3nP97zP9znN3/z00084cLAUHCJysGQcInKwZOaJ6Mcff8RoNDpw8EJ++OEH+yIyGAxUVVVRX19PQ0ODAwd2qa6uRqfTLS4iW5DJZGJqasqBA7s0NTW9WES2wJmZGQcO7OIQkYMl4xCRgyWz/CKatjJjGWdkoI/e7m66lUp6h4YZm5xmymonfo5pM1NGHYODOiZNU1jtxbwCpqfMGEZ6GJ0wYrD8Mma1YBkfpL9PjUZnwDQbOy0wMDYwjFarxzA1/zovhdWMZe7ezHbubUqPTj1An229nqFvWIvWIJ7N7Jrq0Kh1jOuFf114/q/M8otI3OyMMgn/3ZvZsHo1q52ceP3QUSR5kwxo7cTPoe+kvzqWjz6MJb9pAJ29mFfA5LCCYv/XCE6rorT35zGzto+ehH24bjrO2ehS5LOxekExER/4EHIliyL1/Ou8FBMd9FbGsndPLAUtQ8/f20A2Maf+zGbbej3DRq8QbharmTGPMtMTz7lTsSRmy1EvPP9XZplFNMqYKp+o3Ye4dC2FpOxCCvPvkpF0EY+3b5Fer2LQ7nkCsdB9FRJ27ZSQ06hizF7MX4KmnKw7mcSm1jMs/p5ecNwkdiH5jS2ciMonU24TigGdqpY0TxfctrhyMiKTEpvYLWPi4SZxbtspLt14RJ15/nVeivE2esokuOyQ8FC8IM/dmyqdsICvOXLkOvcKCykQFAoqyzOR3ksjOEhKb3s4R49IiE5/Mntf887/lVleEZmUDMji8NzwOUkFHSiNYky8RePKWqS3HiPrFSKzd56NVyWi/vuEB0k4fzmfXvH3QhFZdf2MpXny4bkEJAXdTMxoUCvzubTzNIGf7uZMRBLxsglmDGIHqL3Efs+bXE+TLe3t/0tEdFnCl8GP5+ds6KNbXk92ZhkjHRF89v9CRMY+hmTJeLt+RuKDStqG9BhtQno2xqRhtLeW6gIp99OlSPMrqOwcYkizQES2OCG++XHDDNmuZxX56ofoqHvM4xxxTJpNVm4Fdf39tD0Mwt/rCHs+ucntGiVjU8KLPTu/cYSZphAO7QsiOKUGpaGTvsYE9uxLJCPiBIGRcQRlKbGO96PP8OJ9sQvElvfP+jyjppnGkvvkZIo584oobe1BI/zOtCjFDXVPqKqqoLS0nNyHMvp1Cprr8mbze5AWzd3IC7y5PYwHLyMik5pBpYLq8kbGFREcmxORyMWg/jmXB7O5FFPYJLzn5PMvzatgmcuZnvHBCu4eduKrwCBi71VQIx6kslcYa5N4mNNTGJUFlCf6cPQDJ95Y74TTrsN4SvLIbJDR/VRESrF4jylPOIr3+wviFHpMhhF0Nbe5fmw7LpvW4rT2LZzf8sQnJoWQI2+za/1vWOW0m3fPZtFusmCcl+OkoBjJLn8iwh5Tr6ym5duzrPET5aMqhajYuwTH1aMf6aQ5dOcvZU+LWdOI4sEZTu9bx+Y31/Ef23azJyiajKF+pjojOfnxaTzcD7Hf3Ys/bQ/gfmkgASe2sGPLWjZvcsbVbS9/+84t0hYTUeBVTn2RQnlXF52Crq4hNF2PyE6W4O4uoa1NIsqdTUQNqNQykYsfZw+sZ7OzWJvte3ELTCJW7KDG6VcvpGUW0TTTJh0meRbSK5/gtu0NVq4UN+nsjaRZGGvDINVx14j88iIJrWNotGOMddwj7EoE/heiqBIi2jkrojoexoYQ6X+RxGfibom4gJBs5Kpi4vf+M+e/SiKnvFf4sHY6s5M480/vERLij9fpa5z+KpvWSdEVPZejWaBAesIHSaSUzPLH1MZ8zLGsCTo0laSF3yYsOJPm3gpi33PhmxwZDaMaFEXhhLn/npPpVciUQ3Q9usG1oM/ZHJSLQfiVk9s+4uQxCQ9qmlHKc4j+YBVfRCWTK++lv72IrPjP+bv/CltcRN672PD3/8CKVatYNcthzl0J5sZzIiqivCCV6E8+5Vajho5hsTY9j8hMDOfjz6R0iO5v/kuzdJZZRAJbO2oYFT6jhcbaCnKl8UiCjvPmcSl5lfeI/OIAO3+7lg3vuArBuOL6rjNvrNuO657jRN6XsMNFiKggmbCz++3HfeRLTG4CB13OkPpYTt+ERbTIJsyjoryVNKJsSObqxcU90Vzr3hp/gpiUOK7EfkvyscOE1Bvp03dRGB6KJOACCeVZnF/jRVKJEOhIA2XfhnHU4zL5AzrGLFbMyjwyYq/ygVcsPa0SfNwvERpTSpe6HVVtPB47znCnvJU+o4UpbTMt+dfYJDxRzv9grL29hbEuKqJQUFTURHtjFukLRZSQQFr0Gd7/lzW88fZO3nURa7N9Exs3bOX3W3xJ6bGgWUoTYIflF9ECzPoOWspu4bL+a1LTb/CVzxHcNh7kRGgo1wWhs8RyOyWJR3liJ7KJKEdCsC3urYOctBP3MFeYVBGXKxMmeeGcLzDWc0wUBBIVHYiXbyhXDl3m4aAJrWWC9vuhpH59iPM3b7LvnXAKnwyg05SRf1vCwcOptAhRGGzXsI2liLGDElqFiLy9JURJZQzbM9F/rbHWlPJwoYiiJSSHnsVlzW68Q65x+enaRBKVkEfdiBX9Ur5p2WFZRWSZGGa4vYyMhnaU4wbMtjFDF4qaKPb+zp/UnESu+53D1/MyUuUkZqvYFQwqOlsVPKkupV2UM1dbOSu6Q8T5c5w9HET6M3EKW1x9LZ2NSXjt9CFRlJpurShPFgPGISWNGSW0VSUQFPhiEc0oUogL8sJt92d4Hc+gV4jDlu94bRwZF93Y+edD/Ol8MU09OiECGRXSMI67B5CtHGVUlAxTVzbS6GDe846n17YTzYnIIMpXfRKf7jhKUnETPXpRUocbaL4fgLMoZy9lrO2JKDGZ9Lgr+Gw9SlyLVswndn6bAe9RUCX857hYq1f9oXZZRTTZU0FFjCevnwoioriKxs5OmmpyuBvryzr3RGFQn1CU4sdNn/0EhJfR2qagsy6Z0KvRBF6Op+apJ2qgIPm8iDvAhYVxtx7RNlBOqqcTfgFRfJvXSGdTDXV3Yji99iDhMVfx9b/GF353qOodZWJ6sUWtJ+PLA7z/pisbr1TNfiWfHbeJ4+s9rPnXP7Arqh35kFGMa+kuiyHGayMnbz+kVNZCXfo1goPOs+tmPkabJ5oTkWguxlQl3PF4jbM3orhX2oi8OIV7Qpgr3/0G6VJFlF5MVUkM0Ye3ciI4n7KaFjplGdyJi8DbN5suUWp//uL+6lhWEU1bxxjvLyLb142t619jxcqVrFzrjJNHIKl1Oob1U1gGRSuc7Mfht1fwm9Xi+Lb9HAjPJ7e1hd6n3VkfGltckh+eC+P6LFht5r0lixs+W9j6+gph3tfy7+sPcfROPS1DhRRJ3PH6gzP/uSWEHGGutXZynZnpozTsCL4eH+KR0oPBYvNKYtwqp/r2VU6s8yBUNkm/aJttPso6JvxXgR+n3/tHnF5byYoN7hwQprptXI21S3RnT0UkmgujWjQXNzn5xw04rVjBuo2/w8XbjW3vfEPekkUkY1DbgzJfwueuq3H6N7E2zq5sv5BMssKMWXRn8679ClhmTzSF1TzGqEJGbWUZxcXFFFdUU9ncjVpvxWL77cw8yfhQFy11xZSUiOO1TTSrRIkwTGIcUyGTqRiZMGFZLM5mGqdFvsK897XVinnEseIKyivltKn1TFq0YidoprVazFvTg9oq5rWbq0nEtdHZIkyv2G2sTxd/Et1QL4rqFmG0xVs993vf1CSmMVGaZSVUlok5q5pp7hkVLbUw9oZ+OtpU9A9PzJbEmbmxepGDWIOKmgoa2p6Ite77+d6e5vALohypelR0iVI5r7MSazkyqEIuVzE5qRJCEnOoxRyikTBpxfUbS6iw5VLdQH3X4Ow3tEXL9xL4XzfWDv7v4xCRgyXjEJGDJeMQkYMl80IR2f6TXy6XO3CwKDU1NYuL6Pvvv2d0VHQ8Dhy8gO+++86+iBw4+GtwiMjBEvmJ/wZzpVOQ1MCouwAAAABJRU5ErkJggg==" InformativeScreenshot="0c0a6d6edb259b7fd4f64ec1c4fd8fc9.png" ScopeSelectorArgument="&lt;wnd app='wordtopdfconverterapp.exe' ctrlname='WordToPDFConverter' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="1b13fbf9-411f-4629-8178-743b94e7deda" Text="[item]" Version="V1">
+                                              <uix:NTypeInto.Target>
+                                                <uix:TargetAnchorable DesignTimeRectangle="251, 513, 653, 19" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="1d797be4-d0cc-4f43-9769-b1c3846951ce" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAApEAAAAXCAYAAABTXRQnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACmSURBVHhe7dYxDUQhFEXBNYgn/CCDBAnYeb8hdCR7+5nuODi/AgCA0J3IMUbNOU8BAMDbncjWWvXeTwEAwJuJBAAgZiIBAIiZSAAAYiYSAICYiQQAIGYiAQCImUgAAGImEgCAmIkEACBmIgEAiJlIAABiJhIAgJiJBAAgZiIBAIiZSAAAYiYSAICYiQQAIHYncq1Ve+9TAADwdicSAAD+ZSIBAAhVfdGS+m9PZtnNAAAAAElFTkSuQmCC" InformativeScreenshot="cea38fb78cb05de5b07dbe837cabacc5.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='wordtopdfconverterapp.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="172, 512, 68, 19" ElementType="Text" FriendlyName="'File &amp;name'" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NTypeInto.Target>
+                                            </uix:NTypeInto>
+                                            <uix:NClick ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1b13fbf9-411f-4629-8178-743b94e7deda" Version="V1">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable DesignTimeRectangle="693, 543, 110, 33" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' check:text='unchecked' /&gt;" Guid="87e1846f-5885-42bc-a57a-79d57a2cf520" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAAlCAYAAACeVr0yAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASWSURBVHhe7drfT1NXAMBx35Zsy+ID2fZgspmRmGzGp2VzJhNwULVKKG5ENIIUxSKU265VU6kMjT9RpiL+LhgEBPxBtMAW2VBBqyACSovQFmhptsS4zI3/4LtbNhWlSzSZg3s9D5+Xe87pr2/Te+5Np42OjiIonwipEs+EfPjoTxrdv3Gh56GgAD3B3yOH9P76iPd3+JlmGxAUwNb0iwipBi8UMrHMz8nWgDDF7L08zPRC74uHNF8YIhQKCVNMZ/8I720XIRVPhFQJEVIlREiVUHbI3lZazx3CarU+sfVQJTWt/ZHnq5hyQ/bdoq1iJ3a9lllzY/kyJpbY2HnEp2SQvfM0TR0+hgIjkdeqkEJDBhms34J5mZY58RZK2kN4A+Hj3TQdNCAlxRBf2CK/uWGCEderjwJDBmQdVJsXkGcwYqvxMCBHHPlnbPB2LWe25hETbaGsq497E9ark/JCBn2Euh3YFqWSIx2g2vPc+FA7LaeLyf1Ux66femn3X6fx8AGKDZs5fvYIpuQkkjUaUi1FfN/gfrrO3cCZIgur5TGNJlH2HaUNN7kTusPNhlPsTjLiOLINvX6FPKYhWS+xqbqb+/7gs88/SZQXMjBAyFWEYYkFS0Et1ybM6cVVf4CC2DmY5A/6qqeJcnMayz6cy8LcAqySmW/XLEWnS2OF8SQ/egIMBV00Fm1mS8ZaVq+RkHKNSMmrMJbWU3O7mcvlNpa/FU18poUMyYKUnkiKVssnyce41OtjYMJr+P8pN+TXNjZuP49rwpxwyH1siYnGUN5Fy71wyOVoZ3zBZzmVNHv8+HsvcdKSQdriNAp/9tHfdwp73EJSEjIxHaygwnGUik1aFm84zPbzF+SQG0h5+wM+NlZS1+Yh1FnHmYIsZr2bzt7rbu6MnZ8nlwJDegm178c4X0+O+QQXh58bH+mh7Wwpm+cvYtsP93B5wyHXkzXPQJErNHY+DW+WrpWZKMqLJ7tqAM9V+YsxbzYz33yH6VFRRD2WmI+9ukoOWUh6VAL2+ru4BsLrWyMcm1wK3OwMyzGvciwzBmPORvY0Pzcu/5Re3GcjYcZaSjs8dI1ECtlNQ3Emm5aPD5mOfm0xFR0ddDx29758DrwiQr4a4WtDL11lRkyperTrKmiWjw+NjV2nYb9EbvxSvlpXxxXPIIOhcMhUUmYvYqWjG7dP3py4z3M0bz3pi02U9vjw9peTHxdLcpKVwvEboDGRoomQ/51OJ7W77WStyCTFasU8dmdnFQZ9Btm5xZQ0ufEOhXeU4ZCr+Gbm5yyR7JisG7Bm60hLlYPnO7khX7IEQjdw7srCoNOh0WU/vVN06BznWp0i5Csnx3SWSMTFxT2hzy/hVNv4eX//tKZFL0BvySRhYULkefIGqGqXxMpxjxUnlVDibMTldLAjycKJlj66/OH5nRGOTS5lh3whkc6R6iNCqoQIqRKvQchOrtVVU1lcRZNb3t0GI81Rvtcg5OtBhFQJEVIlXjrkR3t8JBz3C1PM/CN+3rC/xD/NhanvX0MGH/xBavUIGkdAUADHrQeRQwrKJUKqhAipEiKkKozyFweL7oGjGQllAAAAAElFTkSuQmCC" InformativeScreenshot="87390807a7424369aff299b758d52776.png" ScopeSelectorArgument="&lt;wnd app='wordtopdfconverterapp.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Provide the'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="1b13fbf9-411f-4629-8178-743b94e7deda" Text="C:\Users\Kornerstone\Documents\UiPath\Sales_Report_Generation_Process\PDF_Files" Version="V1">
+                                              <uix:NTypeInto.Target>
+                                                <uix:TargetAnchorable DesignTimeRectangle="328, 157, 331, 25" ElementType="InputBox" FriendlyName="'Status'" FullSelectorArgument="&lt;wnd ctrlname='DestinationFolder' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='DestinationFolder' /&gt;" Guid="ec3d6055-d3e9-43f1-9456-d5187c12847f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAU8AAAAdCAYAAAAq/O66AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEhSURBVHhe7d2tSoMBFMdhozfgTZjE4C14EfYt6CUsCAabMMEgCFsRtihikRXBLIhFDHstfjANb9EwcEdkIMzN+Xry88AvnBv417NQlmVIkv6X8ZSkRN/jeVW8xuHlkyRpTqfXg8nxbF48xmLjNpb3+pKkGS3t3MX6UX96PFeaRbwNP+J9OJIk/ahxPpg9nqv7RYxGAcAM272Xv8ez2+1Gp9MZHwBUG896vR61Wm18AGA8ATKMJ0CC8QRIMJ4ACcYTIMF4AiQYT4AE4wmQYDwBEownQILxBEgwngAJxhMgwXgCJFQaz3a7Ha1Wa3wAUG08AZhkPAESjCdAwq/j+fVWc/PkObYkSVOtHRTT43l2M4iN43tJ0px2ew+T4ylJqloZn4lmYM1yZWA8AAAAAElFTkSuQmCC" InformativeScreenshot="d2e8ba2f2cb0fe7f7fccc2250b4d6aa9.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='wordtopdfconverterapp.exe' ctrlname='WordToPDFConverter' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="137, 158, 184, 16" ElementType="Text" FriendlyName="'Provide the'" FullSelectorArgument="&lt;wnd ctrlname='label4' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='label4' check:text='Provide the destination Folder' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALwAAAAUCAYAAAA3BlcoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAA9xSURBVGhD7ZrpV5TXlsZ79Yfuj33X7bu6e/W9fe2O3sR0J7cz3CyMRklMTBwCiqgMIjIVVShzMQ/FzEsVBcgkoqWoICJD4cAkk0amgCBOgAjI5MAo/Ae/PsUU9GIGTWd1Rz48H95z9t7nvPt9ztn7Kfib6elplrGM1wXLhF/Ga4Vlwi/jtcIy4ZfxWmGZ8Mt4rfBiwg/VU34inhCFAsUCwog9fpXKziXs/zcw+YTpBxWc0pVS9k0HD5ey+TF41M712lLSMmrpHp9kfCmbV8FgHaWFpeQWtTAgnqeen/81Y/IR031lnIgMxPcZrigIz6mjvmtkab/RbvraSomLK6Wle5iR5+cHv+Fifil5xa0zOX1m7hXwYsJ3nUZ7wIr1/2WMiaUlFgKW23ezS5FGVG4Xj4TNz/JhR3u4d7OZkrJ2BiefMrl4bnyA6ZtanGwkNLpvuL947vswMcTjnmaK9c109j9hTHwQ/REJU/MMmkbG/zq5r4rOk0gBEm5BRdwVzz85L6P36WpvprT8JkNPp5h8fJvm+mauNtzj8VL2PwbjQzy834y+qJmuwSeMizU6xRplFXNrLOXzMhjrY7pdzf71X/D5J5vZYeDJHJTHarlyV1xaS/kNN3HjosTHaySKvu1m6Pn5juNE+Up4qc7P5PSZuVfA9xM+ROKAbwF3xPNTw1jPWZICY3H1yOXG/NirYlBUjLxMFK65tI1MMLp47mUJ//A6d8sljNdLnLvWyeD/dcL3lVJ4WGLH7kyaxyYZuV/EEW0m0YmXuSfmX+piGW7mZonEurUShY33GBqopSwnk4OeedyaeMrYUj4vg3nCW0gknq6nZymbpfD/gvBT1ZxyjyTQPIUy8Twxb/sqmHrK00nRZohW468+7OtK+KlJJicmmRDEfCmyG/A84b8vz6+CXzPh+5pTiHYNwM1JTUXDMeSKKAIDXbCy8kbmHs+lhkNEy9ezdaMRRqb7kaWcpW56RJTPWo47B5CSWExVv4g98VDEzyHGTi3GUtAVZeHtV8DNUXHD917i0mFnFDuNWP/JWpHIzbxh7I+/gfBP7tJfn4S0sIYdNpo8Cu+Lwzc1v/dB7lSmozZZwT/+ZgVvfR2O9ngKx4+EsGmjglSVPdu3fIaRkSk7ndNIqZtm/KnwE+teTJMhF+sabfgco/0qYis7aH04H3cRRM/+bWEQvtZGrP3YCAuzTby/yRVzA+EnhpkSudOF7sByi4j15U42+6Siuz1B39g0g9ey0AXuFOtvENiPp5RLir8jLutX8Nvff8SfbY9RXJVFWloWWm0W164dRSaLJDlIgZPFFuHzFV+YBhJWPkGnYW+3L1ClccbayIg1AkZGFjhE5aA9nEzs1yv4zT+sYLVpJEk5WeTnZ+Er9nhHtI5jvRc4n+qEzEz4GH+BkV0YJ252cV/0zpX5abjKgzkR7oDpZkOutmPukkF6veDBQp7n8EOEF/Eaz/njYyX2t0asZelFdOk12p8nvLBrEHbKOTvLnZv4701uWBgIPz44c6lkBpmwZ7OIsXkX2/wPc+LuFP2d59ElJ+Dm5otSKRe+EZxs6X7h5fj9hD+4j40fbGGvXI6zgI3Cgf0hh0nKLqa5RMWnb3yNs1sw4ZrDJEaFkBTwOY6B3qhiolH5OuMc4INDfgtPJm6T4/wVHsooEq4MM/noPg/y7dlirkKlVqPLlDDZmUbjk3tUpTsSG7AXd1UI6lhB1iAzVn4ViJeujIZGPQXBdgRqY4nWqFHHhxEQo8VNU0OnuBlnxegIA21F5IeY8OYqE+zCc7lQeZqcBC+M3zbHPVZDlFqDWqnA28mb/aGVwreH2vRAUqJ8CI0XcdWxqBP8cQo5w+mqzufE8iA3CiM4HLAdeXAgUlwc2lAbNpi7sy0ol5beJkpD9hETF0qEIZYmkgh1ONYBF6m9W88FdRQqCycUsVFIfjIsNgfh7+KIu5MJ735kj1J3hea6dMJFxXB3lygpDmHdv23F0TOUME086iAlKkc7tiouUHlriJH+Nm6XZ6MTedQIqIPccHLX4OEXTYYgyMo3TMQByONS5UlOpUuYWRymZaKHyhRbogNs8AgLJSYyFD/ZVsyTC8mvzCZf7cFn7+zCIy5+NlfecjydfHGMuML9yalnK/s84Y23sfXLXdgKnsjlXgLHuXS7nZp8FWkBZihCAokT+wty3YNNbCqa88WLCN/ClXOhz9hpQ6xZu9ODHao8mrvrKQm0JioujAjDdxc5DVdHYhVwiW+qkwlycGD7F44EadLEt7tIXc/wC3/g+EHRukGIVlMrKywFrLxjkYqbqO9spbMknM9WWBCbUUFrRwPX8sQH2rYVqeYWHY/GeCgqwOFYNz6Q53PvyTit2Q74+wfifaSe3t4WyjyNMY84ydHibIoNhN+RSGPPBSLtdxIUnUjR3SEmR/rorfLlyz0RBKWfJD8rHOf3/8KeUHF7pWSQEa/E3c6GNcYqiu6PCdE7t/elWhqtL5+/50JMTQddj8aZvpWHXuOPqVkiTb0XiRC3tK2FI25qETdNS0akJRs+dkKZWELzyKK8PL5GTuRBfFw8yGx9wIQQgAMNCRz0CMHSN4Oaeh2ub7+F9cFgghJFrKQwor0tefNPCpLLzqB198Ztm4zAwrNUXBLElqWTdTiBQ4tbms6smRZplvAq1v3rHvx01dT3CQHYc5Wbp5V8sjaWAiFqB4UY7b1RS0leHkcyxHqxTuza442Dh/AVLc3a+Zamt4R8A+F3JdHSf4mwfdsJjkvlfMcwE0Md9GRb8qlDAtrMZE7H+bDpL65IV7vofixydfMM+VKAOCxHuS7arGd01oJo3SRE6xbMDDyxchJIo6ihiCSVAl83Jbq2/pnq0H/RD2fvMJwi0qmfJ3xtvqi839lNGezqNTi7hmITeISqK0c4sGoVVm4qQmZyKi4TDytWrnQhPSuCA3tdsLNSc97gu3hvS+Cn9fDzeCgIf1niM2OJs1c7GHhQzvmjEl+bHabx8RhPDDbPj/UUkBIag6dvKhU3zxP66Ta0hfU03iqfJbyJRGOjhI3o19W6q7MlaXEPr5HIjN3HB3/3O/745lv8afVqVs9gDR9vdCO1dZT7o/P7+xE9/PyYqURTk8TeD95l9T//kf9YiGvAVuRxhVQ8mItrwHy/HihaA/E8k+D5MTeJ0kIl6/7+d6xcsZKVC3HeE9iFqrCMTK0SD/OP+NByD05h6Rw71UzrlXxyXkR4Qx++Tpolt2Gtud78k5mxdu42n0UvHcDmiy3859tvs3rV7/mnP1tg/iLCm0m0tEhYWkoknKqbbUHGHsySVowlJkqinTJUgqOiEjydzZVo9/Lnxl5I+KVamo4TRPtJeIYWf6dtxNhMb+4lcVEQfo2B8EUSvs/36/M9vLC7cNaLNX/7W97495WsWsjp+wK7iUgLxVYh7MLO0zHv+z345Qg/1UGpJpjYg7tRXVazfkMMuQbfvp9C+AC+WunNyb5B7o2MMDKDUUZHx5kUt8LC6X4pwsvxiSygdiGuAWOMC/H4TN/6g4QPF4S3Jf5CE9cX7dEQa8Lws+vEOOMPbnGvQugM2QZW/cEamX8AES9F+BxSDh7Ea6M7GZfaefxErNV+lAifGNx/VYQPE4TfR2L5ddqez+kdnXjfX5rwEx00FIhNb1lLYEkrt4ZGGbqaTnKEgnfc9PSOTAj/Me4WSqQf/IQv91ljpCyn6pYop/OE35FEY38V8Y5f4R8WRbYoTxPDXXTpzDA2FaL1yBn0Z6LwWfchXpmt3OwdZXqojloheJX+hTOCd+Gntp9C+J2HaBqsQmNpjPJgBFnV/UJUD4v3zyY6NIvTF1rpn49rwFgL+dFO+Dnbo627LwTvFL2FXsjshWj1P8aV5tP4v/cHvEXffLntkWiB7tBdl4WzLIvKGyXkSqLn9zhE3o0uOtuLiNxhhcpfgUfMyxA+myQhLt23aMlsG5s59L0FcTjsD2L3iwi/O5mWh9XE2W7EPzKO3PYBxgfu0JlpwseyJOJ1qZz5uQg/1kxeuD1+LjKSGnpmLo6efDfsvEKxjzlC03xLc+0imTN2zhwSdoaWpiffFTtbIVqDdaJNPIHvO/+Cd2wR1e2GnN6k40oWjg5Z1JRrCfjFCW8Qijf0lErbkR2wRCZ3ZP9+ZxwCNEhVXYyKm83gN9KWQ27wLta/ux2Hs/doG5gQxJsj/Ixo7aMx15twhTnmu2w54GKHn+caPtqkJEx3mZa2Ekpi7JDttULm5Ijc0xXnsET8dS30jj/9TkyN36anSfTVG4zZuzeGjJPJpL+I8ObpYuwBjWeEQPa0wdHWFvkBF+T+nsjiismv752tWAt4RFdFIhm+ZpiY7sXZWY7SfSNf7nDCNiiP1oFW6g45EyDbi5O9PXK3g0LcqnDSXqW+u51qQZwYMwuxLxlyuRU2snDSs9M5mRmAw4ZtWDkfo7hMi9+PIvw3XEpNFvEcRTyDWBRVymY7H25yxcQvier6eOTr1rNXVMjM08mkzIjWDEHkfhqy3dEE7MJRYYtMJp/puz1OVFJ97ewCuV+Z8CJXnWXxHA8zw16xd2Z/NjYyXBLOcKamdJFovUFTmYZUpRmm22ftfDw+5XNTGY6qfFr7mqlLdMTXyXpRTsNFTq/RdDWNkJ+F8ANXRCnRo8uu54F4XmgXDBBCaaBNT2SEnmu3+2f/GjjazXDbaY6G2+LiIISLq0RsdsOzvuKgNOl1RLpqKbg7Rv/43NhlPWptxewvLQO1nE8Lx0OIH1sHWwJTAgmOPMX5qtsMjQwy1Foi1tiPYmaNIPyPl8702IbbbWF/04M8flDChQhb3O1FVTmVTb5YQ5NQQdf8vxaIKtC4eGygnZozasKFGLLa74hVUCqZ4ga/82Rx3DkYfAuT8BN7tBZQSkqCpSOcyG3kwcQoUz2NFKQoUSpELJkH8vgcCromGRTv+/B6DRVCyPrO+x6tpubODe41HOekryM21mkU1uRxLEfPiRN6rl/Xo1LpaegYnD14I130tugJmxvraammPHFRPKUSRfARNGfLuCPEeLHKBlf7ODKyczhXrkd7qJJ74gIa76+hOieUMHfD+yrE+xZS2ynWeNhCfdkiu5n3/W6sW1S0Z/41w/ATc08x6Yf0XLpyl+HFcwYI37ayBDS+Yn/WYi0fHWfEJTk80klPs57QUD2NXUM8EQe57lzCzHtYCfiofQiOzeRkXhP9EyNijQbOJXniLS4JK2cvcWjOUtQ9xVBPNQWn9Zw89+2zlfgFeDHhl7GMXyGWCb+M1wrLhF/Ga4Rp/ge2OxrdOxW46gAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NTypeInto.Target>
+                                            </uix:NTypeInto>
+                                            <uix:NClick ClickType="Single" DisplayName="Click 'Convert'" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1b13fbf9-411f-4629-8178-743b94e7deda" Version="V1">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable DesignTimeRectangle="276, 257, 74, 36" ElementType="Button" FriendlyName="'Convert'" FullSelectorArgument="&lt;wnd ctrlname='Convert_Button' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='Convert_Button' check:text='Convert' /&gt;" Guid="f3b5e0e1-ef2a-4218-bf7f-d38359d69ec2" ImageBase64="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" InformativeScreenshot="555ef79916ccc640c1974019574caf7c.png" ScopeSelectorArgument="&lt;wnd app='wordtopdfconverterapp.exe' ctrlname='WordToPDFConverter' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'WindowsForms10.STATIC.a...'" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_4">
+                                              <ui:WaitUiElementAppear.Target>
+                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="134eaaa5-ea03-4ed7-965a-dfd2b198e007" InformativeScreenshot="5e4417ad957a1cc40abbb0d06c4035fd" Selector="&lt;wnd ctrlname='Status' /&gt;">
+                                                  <ui:Target.TimeoutMS>
+                                                    <InArgument x:TypeArguments="x:Int32" />
+                                                  </ui:Target.TimeoutMS>
+                                                  <ui:Target.WaitForReady>
+                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                  </ui:Target.WaitForReady>
+                                                </ui:Target>
+                                              </ui:WaitUiElementAppear.Target>
+                                            </ui:WaitUiElementAppear>
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </uix:NApplicationCard.Body>
+                                      <uix:NApplicationCard.TargetApp>
+                                        <uix:TargetApp Area="228, 228, 686, 414" FilePath="C:\Users\Kornerstone\Documents\UiPath\Sales_Report_Generation_Process\wordtopdfconverterapp.exe" IconBase64="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" InformativeScreenshot="256ad7b0b044f8bd868f427200f04766.png" Selector="&lt;wnd app='wordtopdfconverterapp.exe' ctrlname='WordToPDFConverter'/&gt;" />
+                                      </uix:NApplicationCard.TargetApp>
+                                    </uix:NApplicationCard>
+                                  </Sequence>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEach.Body>
+                          </ui:ForEach>
+                        </FlowStep>
+                      </FlowStep.Next>
+                    </FlowStep>
+                  </FlowStep.Next>
+                </FlowStep>
+              </FlowStep.Next>
+            </FlowStep>
+          </FlowStep.Next>
+        </FlowStep>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+    <x:Reference>__ReferenceID2</x:Reference>
+    <x:Reference>__ReferenceID3</x:Reference>
+    <x:Reference>__ReferenceID4</x:Reference>
+  </Flowchart>
+</Activity>
